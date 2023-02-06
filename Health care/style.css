@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: white;
+}
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image:url('./second\ 2.png') ;
+    background-position:bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 10px;
+    text-align: center; 
+    font-size: 4vmin;   
+}
+.header-content h3{
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: rgb(104, 255, 101);
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+.btn{
+    padding:8px 15px ;
+    background: rgb(104, 255, 101);
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color:white ;
+    color:rgb(104, 255, 101) ;
+}
+.logo{
+    height: 10vh;
+}
+.navbar{
+    position:fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.nav-links li a{
+     font-size:21px;
+
+}
+.nav-links li a:hover{
+    color: rgb(101, 238, 103);
+}
+.btn-bck:hover{
+    background-color: #fff;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+.book-mark-in-div{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.book-mark-in-div h2 a{
+    color: #259925;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight:200px ;
+}
+.a{
+    height: 50vh;
+    width: 100vw;
+}
+.dataflow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
+}
+.data-flow-in-div{
+    background-color: #25995C;
+    box-shadow: 8px 7px 8px rgba(0, 0, 0, 0.25);
+    min-height:90vh;
+    max-height: fit-content;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+}
+.data-flow-in-div img{
+    width: 40%;
+    height: 80vh;
+    margin-left: 20px;
+    border-radius: 10px;
+    object-fit:cover;
+}
+.data-flow-in-ul{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.data-flow-in-ul ul{
+    word-wrap: break-word;
+    list-style-type:disc;
+}
+
+@media only screen and (max-width:750px){
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        height: 7vh;
+        top: 10px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(0, 0, 0);
+        margin-top: -100vh;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .menu-btn{
+        display: block;
+    }
+@media only screen and (max-width:750px){
+    .data-flow-in-ul ul{
+        font-size:small;
+    }
+    header{
+        width: 100vw;
+        height: 30vh;
+    }
+
+
+}
+@media only screen and (max-width:400px){
+    .data-flow-in-ul ul{
+        font-size:12px;
+    }
+
+}
+     
+}
