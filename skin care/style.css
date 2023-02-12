@@ -16,7 +16,7 @@ body{
 header{
     width: 100vw;
     height: 80vh;
-    background-image:url('./second\ 2.png') ;
+    background-image:url('./skinbck.jpg') ;
     background-position:bottom;
     background-size: cover;
     display: flex;
@@ -135,6 +135,14 @@ ul{
     color: #259925;
     margin-left: 10px;
 }
+#ac{
+    color: #259925;
+    margin-left: 10px;
+}
+.content-in-div h3{
+    color: black;
+    margin-top: 15px;
+}
 .header-content input{
     padding: 10px;
     margin-top: 15px;
@@ -144,7 +152,37 @@ ul{
     outline: none;
     color: #04803a;
 }
-
+.footer{
+    background-color: rgb(6, 67, 6);
+    height:50vh;
+    margin-top: 5vh;
+}
+.footerText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footerText a{
+    font-family:'Montserrat';
+     cursor: pointer;
+     margin-top: 10vh;
+     display: block;
+}
+.footerText a:hover{
+    text-decoration: underline;
+}
+.footer-imgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+.footerIcons{
+    height: 50px;
+    cursor: pointer;
+}
 @media only screen and (max-width:750px){
     .navbar{
         padding: 0;

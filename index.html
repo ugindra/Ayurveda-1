@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7f5afdc91c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f934142db8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -15,7 +16,7 @@
             <li><a href="#">Collab</a></li>
             <li><a href="#">Upload</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#" class="btn btn-bck">Sign Up</a></li>
+            <li><a href="./sign_in" class="btn btn-bck">Sign Up</a></li>
         </ul>
         <img class="menu-btn" src="./toggle.png" alt="">
     </nav>
@@ -28,13 +29,15 @@
             <div class="line"></div>
             <h3>Treatments Always Yield Side Benefits</h3>
             <h3>Not Side Effects</h3>
-            <a href="#" class="btn">Login</a>
+            <a href="./login_page" class="btn">Login</a><br>
+            <input type="search" placeholder="Search in Portal">
+    
         </div>      
     </header>
     <div class="description">
         <div><i class="fa-sharp fa-solid fa-leaf "></i><h1>Simple</h1><p>Process of making the remedy is simple</p></div>
         <div><i class="fa-sharp fa-solid fa-pen-to-square"></i><h1>Accurate</h1><p>You will observe accurate results</p></div>
-        <div><i class="fa-sharp fa-solid fa-circle-exclamation"></i><h1>NO Side-Effects</h1><p>Our remedies,have no side effects</p></div>
+        <div><i class="fa-sharp fa-solid fa-circle-exclamation"></i><h1>NO Side-Effects</h1><p>Our remedies have no side effects</p></div>
     </div>
 
     <section class="cards">
@@ -45,30 +48,37 @@
         </div>
         <div class="card ">
             <div class="card-img card-2"></div>
-            <a class="link-2" href="">Hair Remedies </a>
+            <a class="link-2" href="./Hair care">Hair Remedies </a>
             <p class="quote-2">Life is too short to have boring hair</p>
             
         </div>
         <div class="card ">
             <div class="card-img card-3"></div>
-            <a class="link-3" href="">Skin Remedies </a>
+            <a class="link-3" href="./skin care">Skin Remedies </a>
             <p class="quote-3">Filters are great but great skin is better</p>
         </div>
     </section>
+
+    <div class="footer">
+        <div class="footerText">
+            <a href="#" class="fText">Learn Yoga |</a>
+            <a href="#" class="fText">Learn Ayurveda |</a>
+            <a href="#" class="fText">Ayurvedic Diets |</a>
+            <a href="#" class="fText">Suggest Us |</a>
+            <a href="#" class="fText">Donate |</a>
+            <a href="#" class="fText">Add Own Remedies |</a>
+            <a href="#" class="fText">Contact Us |</a>
+         </div>
+         <div class="footer-imgs">
+            <img src="./foot_iimgs/facebook.png" alt=""  class="footerIcons">
+            <img src="./foot_iimgs/instagram.png" alt="" class="footerIcons">
+            <img src="./foot_iimgs/twitter.png" alt="" class="footerIcons">
+            <img src="./rating.png" alt="" class="footerIcons">
+         </div>
+    </div>
+
     
-    <footer class="foot">
-        <div class="footer-div">
-            <ul>
-                <li>Learn Yoga</li>
-                <li>Ayurvedic Diet</li>
-                <li>Fatloss </li>
-            </ul>
-        </div>        
-    </footer>
-
-
-
-
+    
  
 
     <script>
@@ -78,6 +88,7 @@
         menuBtn.addEventListener('click',()=>{
             navLinks.classList.toggle('mobile-menu')
         })
+
 
 
     </script>

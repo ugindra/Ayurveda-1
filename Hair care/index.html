@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html"><img src="./logo2.png" alt="logo" class="logo" style="cursor: pointer;"></a>
+        <ul class="nav-links">
+            <li><a href="#">Collab</a></li>
+            <li><a href="#">Upload</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="../sign_in" class="btn btn-bck">Sign Up</a></li>
+            
+        </ul>
+        <img class="menu-btn" src="./toggle.png" alt="">
+    </nav>
+
+
+
+    <header>
+        <div class="header-content">
+            <h1>Hair Care</h1>
+            <div class="line"></div>
+            <a href="../login_page" class="btn">Login</a><br>
+            <input type="search" placeholder="Search in Portal">
+        </div>     
+    </header>
+
+
+    <div class="book-mark-in-div">
+        <h2><a href="#hs">Hair Strengthen</a></h2>
+        <h2><a href="#df">Rid of Dandruff</a></h2>
+        <h2><a href="#dh">Dry Hair</a></h2>
+        <h2><a href="#se">Split Ends</a></h2>            
+    </div> 
+<div class="content">
+    <div class="content-in-div">
+        <ul>
+            <h1 id="hs">Hair Strngthen</h1>
+            <h3>Hibiscus Flower Extract</h3>
+            <li>
+                Hibiscus is a multi-colored, commonly found flowering plant It is rich in amino acids,
+                 vitamins A and C, and alpha hydroxy acids, among other things,
+                  all of which are ideal for promoting hair growth and preventing hair loss.
+                   Collect and dice about 20 red flowers and four thick leaves.
+                    Take a frying pan and add 100 ml of any hair oil (you can pick one from our list of the best carrier oils!) Add the minced flowers and leaves to the oil and gently heat until fumes appear.
+                     For added potency, you can add 4-5 leaves of basil with a pinch of fenugreek. Switch off the flame and allow the mixture to settle in for 2-3 days.
+                      Filter and store in a glass bottle. Apply this oil by gently massaging it into the scalp and wait for an hour before showering.
+                       (Preferably using a natural, gentle shampoo to wash off the oil). Not only will the oil strengthen hair and add the shine of your dreams, but it will also aid in hair growth.
+            </li>
+        </ul>
+       
+    </div>
+</div><br>
+<div class="content">
+    <div class="content-in-div">
+        <ul>
+            <h1 id="df">Rid of Dandruff</h1>
+            <h3> Fenugreek Seeds</h3>
+            <li>Firstly, you need to put some fenugreek seeds in a small bowl of water and let it soak overnight</li>
+            <li>Once you wake up in the morning make sure that you mash the seeds to a paste-like substance. Then add little lemon juice to the paste and mix it well.</li>
+            <li>Once this has formed into a paste, apply it onto your scalp and hair and leave it to dry for 30 minutes.</li>
+            <li>After this is done you can wash your hair with shampoo and allow your hair to dry.</li>
+        </ul>       
+    </div>
+</div>
+<div class="content">
+    <div class="content-in-div">
+        <ul>
+            <h1 id="dh">Dry Hair</h1>
+            <li>Coconut oil has a soothing and moisturizing effect when applied to the hair.</li>
+            <li>People can prepare a simple hair mask by boiling curry leaves with coconut oil for 2–3 minutes and leaving it to rest in a cool place for a few days.</li>
+            <li>When the mixture has cooled, it can be gently rubbed into the hair and scalp with the fingertips and covered with a warm towel. It should then be left on for a few minutes before being rinsed.</li>            
+        </ul>       
+    </div>
+</div>
+<div class="content">
+    <div class="content-in-div">
+        <ul>
+            <h1 id="se">Split Ends</h1>
+            <h3>Egg mask :</h3>
+            <li>Mix egg yolk in three tablespoons of olive oil and one tablespoon of honey. Gently massage this mask in your hair and cover with a shower cap. Leave on for half an hour and wash with a mild shampoo.
+            </li>
+            
+                     
+        </ul>       
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footerText">
+        <a href="#" class="fText">Learn Yoga |</a>
+        <a href="#" class="fText">Learn Ayurveda |</a>
+        <a href="#" class="fText">Ayurvedic Diets |</a>
+        <a href="#" class="fText">Suggest Us |</a>
+        <a href="#" class="fText">Donate |</a>
+        <a href="#" class="fText">Add Own Remedies |</a>
+        <a href="#" class="fText">Contact Us |</a>
+     </div>
+     <div class="footer-imgs">
+        <img src="../foot_iimgs/facebook.png" alt=""  class="footerIcons">
+        <img src="../foot_iimgs/instagram.png" alt="" class="footerIcons">
+        <img src="../foot_iimgs/twitter.png" alt="" class="footerIcons">
+        <img src="../rating.png" alt="" class="footerIcons">
+     </div>
+</div>
+
+
+    <script>
+        const menuBtn=document.querySelector('.menu-btn');
+        const navLinks=document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+
+
+    </script>
+
+</body>
+</html>
