@@ -25,7 +25,9 @@ header{
     text-align: center; 
     font-size: 4vmin;   
 }
-
+#inpp{
+    width: 50%;
+}
 .header-content h3{
     margin-bottom: 15px;
 }
@@ -68,13 +70,14 @@ header{
     height: 10vh;
 }
 .navbar{
-    position:absolute;
+    position:fixed;
     display: flex;
     top: 0;
     left: 0;
     width: 100%;
     justify-content: space-between;
     padding: 20px;
+    
 }
 ul{
     list-style: none;
@@ -193,47 +196,30 @@ ul{
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
-.footer{
-    background-color: rgb(6, 67, 6);
-    height:50vh;
-    margin-top: 5vh;
+
+
+.navv{
+    display: none;
 }
-.footerText{
+footer{
+    background-color: rgb(6, 67, 6);
+    height: fit-content;
+}
+.footer-links{   
+    height: 30vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-}
-.footerText a{
-    font-family:'Montserrat';
-     cursor: pointer;
-     margin-top: 10vh;
-     display: block;
-}
-.footerText a:hover{
+    flex-wrap:wrap;
     text-decoration: underline;
 }
-.footer-imgs{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10vh;
-}
-.footerIcons{
-    height: 50px;
-    cursor: pointer;
-}
-
-
-
 @media only screen and (max-width:750px){
     .navbar{
         padding: 0;
     }
     .logo{
         position: absolute;
-        top: 20x;
+        top: 20px;
         left: 30px;
         height: 8vh;
     }
@@ -242,7 +228,7 @@ ul{
         width: 100%;
         height: 100vh;
         justify-content: center;
-        background-color: #07500c;
+        background-color: #000000;
         margin-top: -100vh;
 }
     .mobile-menu{
@@ -280,14 +266,16 @@ ul{
     .card-img{
         height: 200px;
     }
+    .footer-links{
+        flex-direction: column;
+        font-size: large;
+        height: 20vh;
+    } 
+ 
 
 
 }
-@media only screen and (max-width:410px){
-    .footer{
-        height: max-content;
-    }
-}
+
 
 
 

@@ -1,3 +1,4 @@
+/* health care css */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 html{
     scroll-behavior: smooth;
@@ -110,39 +111,50 @@ ul{
     cursor: pointer;
     font-weight:200px ;
 }
-.content li{
-    list-style-type: disc;
-    line-height: 2;
-    
-}
-.content{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-.content-in-div{
-    height: max-content;
-    width: 90vw;
-    border-radius:10px ;
-    padding: 10px;
-}
-.content li{
-    list-style-type: disc;
-    color: black;
-    margin-left: 20px;
-}
-.content-in-div h1{
-    color: #259925;
-    margin-left: 10px;
-}
+
 .header-content input{
     padding: 10px;
     margin-top: 15px;
     border-radius: 20px;
-    width:15vw;
+    width:100%;
     border: none;
     outline: none;
     color: #04803a;
+}
+
+.about{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+}
+.about-content{
+    background: linear-gradient(90.91deg, #58cd50 0.31%, #58cd50 99.55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent; 
+    font-size: 3vmin;
+    overflow-x: hidden;
+
+}
+footer{
+    background-color: rgb(6, 67, 6);
+    height: fit-content;
+}
+.footer-links{   
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    text-decoration: underline;
+}
+#dand-img{
+    width: 30vw;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width:750px){
@@ -172,11 +184,17 @@ ul{
     }
     .menu-btn{
         display: block;
-    }     
+    }  
+    .footer-links{
+        flex-direction: column;
+        font-size: large;
+        height: 20vh;
+    }  
+    #dand-img{
+        width: 95vw;
+    }  
+    .about{
+        flex-wrap: wrap;
+    }   
 }
- @media only screen and (max-width:500px){
-    .content-in-div h1{
-        text-align: center;
-    }
-        
-    }
+
