@@ -25,13 +25,14 @@
 
     <header>
         <div class="header-content">
-            <h1>Ayurveda</h1>
-            <div class="line"></div>
-            <h3>Treatments Always Yield Side Benefits</h3>
-            <h3>Not Side Effects</h3>
-            <a href="./login_page" class="btn">Login</a><br>
-            <input id='inpp' type="search" placeholder="Search in Portal">
-            <p id="scrolDown"><span  id="scrool-down">Scroll⬇️down</span></p>
+            <div>
+                <h1>Ayurveda</h1>
+                <div class="line"></div><br>
+                <h2>Treatments Always Yield Side Benefits</h2><br>
+                <h2>Not Side Effects</h2><br>
+                <a id="login" href="./login_page/index.html">Login</a><br><br>
+                <p id="scroll">Scroll to Explore</p>
+            </div>
     
         </div>      
     </header>
@@ -81,24 +82,10 @@
 
         menuBtn.addEventListener('click',()=>{
             navLinks.classList.toggle('mobile-menu')
-        })
+        });
 
 
-        window.onscroll = function() {scrollFunction()};
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                var tgl=document.querySelector(".nav-links");
-                tgl.classList.add("navv"); 
-             
-            }
-         else {
-              
-                
-                var tgl=document.querySelector(".nav-links");
-                tgl.classList.remove("navv"); 
-            }
-        }
 
 
 

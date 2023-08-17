@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Transparent Login Form HTML CSS</title>
-	<link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<section>
-		<div class="form-container">
-			<h1>Sign Up</h1>
-			<form action="#">
-				<div class="control">
-					<input type="email" id="name" placeholder="Email">
-				</div>
-				<div class="control">
-					<input type="password" id="psw" placeholder="Password">
-				</div>
-				<div class="control">
-					<input type="password" id="psw" placeholder="Confirm Password">
-				</div>
-				<div class="button">
-					<button class="btn">Submit</button>
-				</div>
-
-			</form>
-			<div class="link">
-				<a href="../login_page">Login</a><br>
-				<a href="">Forgot password</a>
-			</div>
-		</div>
-	</section>
+  <div class="container">
+    <form class="login-form">
+      <h2>Register Here !</h2>
+      <div class="input-group">
+        <label for="username">Fullname</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div><br>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="email" id="password" name="password" required><br><br>
+		    <a href="../login_page/index.html" id="signup">Already a user ?</a><br><br>
+      </div><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </body>
 </html>
